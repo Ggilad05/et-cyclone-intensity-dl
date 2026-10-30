@@ -47,3 +47,4 @@ secrets.*
 *.feather
 *.pkl
 *.pickle
+/models/artifacts/
