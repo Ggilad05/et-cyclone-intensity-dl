@@ -1,0 +1,20 @@
+name: Validate revised regional classifications
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-sa-so-disjoint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check SA and SO storm-ID lists do not overlap
+        run: |
+          python scripts/audit_classifications.py \
+            --left classifications/revised/classification_SH_SA_corrected.txt \
+            --right classifications/revised/classification_SH_SO_exclusive.txt \
+            --require-disjoint

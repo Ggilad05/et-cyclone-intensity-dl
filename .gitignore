@@ -1,0 +1,49 @@
+# Python environments/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.DS_Store
+
+# Generated data and runs
+/data/*
+!/data/README.md
+/outputs/
+/cache/
+/checkpoints/
+/lightning_logs/
+wandb/
+mlruns/
+
+# Typical raw atmospheric arrays, model artifacts, and large input files
+*.npy
+*.npz
+*.nc
+*.nc4
+*.grib
+*.grb
+*.grib2
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.hdf5
+
+# Sensitive/local setup
+secrets.*
+*.key
+*.pem
+
+# Large per-forecast tabular outputs and serialized datasets
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
