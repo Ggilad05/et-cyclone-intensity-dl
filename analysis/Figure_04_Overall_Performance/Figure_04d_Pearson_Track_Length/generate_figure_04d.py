@@ -424,6 +424,12 @@ def match_6h_groups(control, msl):
 
             }
 
+    for L in aligned[(6, 'Control')]:
+        control_true = aligned[(6, 'Control')][L]['true']
+        msl_true = aligned[(6, 'MSL Only')][L]['true']
+        if not np.allclose(control_true, msl_true, rtol=0, atol=1e-5):
+            raise ValueError(f"6h Control/MSL-only truth mismatch at length {L}")
+
     return aligned
 
 

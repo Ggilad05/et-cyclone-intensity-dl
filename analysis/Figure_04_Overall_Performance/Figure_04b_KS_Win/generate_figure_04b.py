@@ -321,7 +321,8 @@ def load_extra_models_6h() -> dict[str, pd.DataFrame]:
 
 def load_ifs(lead: int) -> pd.DataFrame:
 
-    paths = sorted(glob.glob(os.path.join(FORECAST2010_DIR, f"true_vs_pred_{lead}h*.csv")))
+    path = os.path.join(FORECAST2010_DIR, f"true_vs_pred_{lead}h.csv")
+    paths = [path] if os.path.isfile(path) else []
 
     if not paths:
 
