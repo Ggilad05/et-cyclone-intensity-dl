@@ -1,0 +1,37 @@
+FIGURE 4d: TRUE-INTENSITY VARIABILITY / CORRELATION DIAGNOSTIC
+Variances are calculated within each storm on the same forecast/verification
+samples used by the Pearson-correlation figure (including sample caps).
+The second variance is for pred_int - true_int, NOT for prediction itself.
+These associations are descriptive, not evidence of causation.
+A longer series does not, by itself, guarantee higher Pearson r.
+Grouping mode: available
+
+Control 6 h: 34,638 storms in 25 plotted x groups
+  Spearman rho, across storms: x vs Var(true intensity) = +0.402
+  Spearman rho, across storms: x vs Var(forecast error) = +0.021
+  Spearman rho, across storms: x vs signal/error variance ratio = +0.368
+  Spearman rho, across storms: x vs within-storm Pearson r = +0.329
+  Spearman rho, across storms: Var(true intensity) vs Pearson r = +0.836
+  Spearman rho, across x-group summaries: x vs median Var(true) = +0.978
+  Spearman rho, across x-group summaries: x vs median signal/error ratio = +0.980
+
+Control 24 h: 26,087 storms in 22 plotted x groups
+  Spearman rho, across storms: x vs Var(true intensity) = +0.341
+  Spearman rho, across storms: x vs Var(forecast error) = +0.141
+  Spearman rho, across storms: x vs signal/error variance ratio = +0.261
+  Spearman rho, across storms: x vs within-storm Pearson r = +0.115
+  Spearman rho, across storms: Var(true intensity) vs Pearson r = +0.555
+  Spearman rho, across x-group summaries: x vs median Var(true) = +0.975
+  Spearman rho, across x-group summaries: x vs median signal/error ratio = +0.977
+
+INTERPRETATION:
+* If Var(true intensity) and the signal/error ratio both rise across x,
+  this is consistent with an increasing intensity signal relative to
+  temporally varying forecast errors in longer observed sequences.
+* If Var(true) increases but Var(error) increases as much or more, the
+  signal-to-error explanation is not established by that observation.
+* Storm length, temporal autocorrelation, different storm populations,
+  and the non-independent overlapping time windows can affect trends.
+* A high signal/error variance ratio does not PROVE error independence:
+  check error_vs_truth_corr in the per-storm CSV. This simple check
+  is not a causal attribution or a universal identity for Pearson r.

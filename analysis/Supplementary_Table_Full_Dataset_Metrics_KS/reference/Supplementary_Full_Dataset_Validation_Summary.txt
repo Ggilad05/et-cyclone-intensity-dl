@@ -1,0 +1,14 @@
+FULL DATASET SUPPLEMENTARY TABLE — VERIFICATION SUMMARY
+Data supplied: FullDataset_Comparison_with_old_table.csv
+Comparison table rows: 133
+Status: 128 OK, 1 CHECK_POINT_ESTIMATE, 4 NOT_PREVIOUSLY_REPORTED
+Old vs new at three decimal places: 125 identical, 4 different; 4 unreported Persistence SS=0.
+All Bias point estimates and 95% CI endpoints unchanged at three decimals.
+All 129 numerical entries in FINAL_VERIFIED.tex were compared against New_value and match.
+Changed entries:
+  6h Simple NN SS: 0.228 -> 0.231
+  6h Simple NN SS_CI_high: 0.230 -> 0.234
+  6h Simple NN SS_CI_low: 0.225 -> 0.229
+  18h Linear Regression SS_CI_high: 0.180 -> 0.179
+6h MSL-only SS 0.513 [0.511,0.515] reported in console but intentionally omitted in this table.
+Comparison audit is a reproducibility consistency check, not an independent physical-data provenance audit.

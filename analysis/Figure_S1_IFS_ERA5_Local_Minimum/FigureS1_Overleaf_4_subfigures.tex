@@ -1,0 +1,33 @@
+% Upload the following five PDF files into your Overleaf Supplementary folder:
+% FigureS1_a_18UTC.pdf, FigureS1_b_00UTC.pdf,
+% FigureS1_c_06UTC.pdf, FigureS1_d_12UTC.pdf,
+% FigureS1_shared_colorbar.pdf
+% Requires graphicx, which is standard in manuscript templates.
+% Panel labels (a)-(d) and the two-item legend are already INSIDE each PDF.
+\begin{figure}[t]
+    \centering
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Supplementary/FigureS1_a_18UTC.pdf}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Supplementary/FigureS1_b_00UTC.pdf}
+    \end{minipage}
+
+    \vspace{0.4em}
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Supplementary/FigureS1_c_06UTC.pdf}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Supplementary/FigureS1_d_12UTC.pdf}
+    \end{minipage}
+
+    \vspace{0.1em}
+    \includegraphics[width=0.82\linewidth]{Supplementary/FigureS1_shared_colorbar.pdf}
+
+    \caption{Identification of the local MSL minimum for a summer cyclone in the North Pacific, shown at four consecutive 6-hourly times: (a) 15~July 2010, 1800~UTC; (b) 16~July 2010, 0000~UTC; (c) 16~July 2010, 0600~UTC; and (d) 16~July 2010, 1200~UTC. Each panel is centered on the tracked cyclone center. ERA5 reanalysis isobars and the detected ERA5 local minimum are indicated by solid blue contours and a blue $\times$, respectively; the operational IFS forecast isobars and detected minimum are indicated by dashed red contours and a red $\times$, respectively. Shading shows the IFS minus ERA5 sea level pressure difference (Pa) on a common color scale.}
+    \label{fig:ifs_local_minimum}
+\end{figure}
