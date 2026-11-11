@@ -1,0 +1,21 @@
+Figure 4d variance-adjusted (directly standardized) Pearson analysis
+Per-storm Pearson correlations are unchanged: only their aggregation is reweighted.
+Variance strata defined separately per lead from pooled within-storm true-intensity variances.
+5 quantile bins; min 15 storms per variance stratum at each x.
+Stratified bootstrap 1500 replicates for pointwise 95% CI.
+No causal inference; effects of forecast sample count / other storm properties remain.
+
+Control 6 h | common-support lengths: 22/25
+  Raw slope in r per 6-h sample: +0.00692
+  Adjusted slope in r per 6-h sample: +0.00144
+  Relative slope-magnitude reduction (descriptive): +79.2%
+  Mean raw r on common support: 0.8863
+  Mean variance-adjusted r on common support: 0.8733
+
+Control 24 h | common-support lengths: 21/22
+  Raw slope in r per 6-h sample: +0.01025
+  Adjusted slope in r per 6-h sample: +0.00215
+  Relative slope-magnitude reduction (descriptive): +79.0%
+  Mean raw r on common support: 0.6815
+  Mean variance-adjusted r on common support: 0.6598
+

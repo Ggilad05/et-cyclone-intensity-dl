@@ -9,11 +9,14 @@ Each figure/table has its own folder. Shared computations that generate several 
 | Figure 4a: overall MAE | `Figure_04_Overall_Performance/Figure_04a_MAE/` | V9 generator |
 | Figure 4b: pairwise KS / winning ratios | `Figure_04_Overall_Performance/Figure_04b_KS_Win/` | Standalone Nov 4 script + V9 |
 | Figure 4c: IFS advantage KDE | `Figure_04_Overall_Performance/Figure_04c_IFS_Advantage/` | V9 generator |
-| Figure 4d: track-length correlations | `Figure_04_Overall_Performance/Figure_04d_Pearson_Track_Length/` | Standalone Nov 4 script |
+| Figure 4d: track-length correlations | `Figure_04_Overall_Performance/Figure_04d_Pearson_Track_Length/` | Nov 4 script + Nov 8 updated intensity script and variance adjustment |
 | Figure 5: MSL-only lookback | `Figure_05_Lookback/` | Source script not yet provided |
 | Figure 6: intensity-change MAE | `Figure_06_Intensity_Change/` | V9 candidate, verify final |
+| Figure 7: domain generalization MAE vs lead | `Figure_07_Domain_Generalization/` | Script + manuscript PDF (Nov 11) |
 | Table 5: 2010 model metrics | `Table_05_Performance_Metrics/` | V9 generator |
 | 2010 IFS audits | `IFS_2010_Verification/` | Supporting code |
+| Supplementary: full-dataset metrics + pairwise KS (combined) | `Supplementary_Table_Full_Dataset_Metrics_KS/` | Metrics recomputed and audited on real data (Nov 11); KS section not yet recomputed |
+| Figure S1: IFS vs ERA5 local minimum | `Figure_S1_IFS_ERA5_Local_Minimum/` | Nov 9 four-panel script, storm `JJA_2010_NH_neg_135` |
 
 ## Local data and outputs
 
